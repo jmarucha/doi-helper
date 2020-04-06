@@ -24,11 +24,14 @@ function findAndAdd() {
     const DOI = matchingElement.innerText.match(doiExtractor)[1];
     const button = document.createElement('div')
     button.className = 'ExportCitation';
-    button.id = 'scihub'
-    button.innerHTML = `
-        <a style="overflow: inherit" class="button button-anchor" href="https://sci-hub.tw/${DOI}">
-        <span class="button-text">Sci-Hub</span>
-        </a>
-        `
+    button.id = 'scihub';
+    const buttonInterior = document.createElement('a')
+    buttonInterior.href = `https://sci-hub.tw/${DOI}`;
+    buttonInterior.className = 'button button-anchor';
+    buttonInterior.style.overflow = 'inherit';
+    const buttonText = document.createElement('span');
+    buttonText.innerText = 'Sci-Hub';
+    buttonInterior.appendChild(buttonText);
+    button.appendChild(buttonInterior);
     document.querySelector('div.toolbar-container div.buttons').appendChild(button);
 }
