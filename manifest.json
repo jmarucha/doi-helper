@@ -2,7 +2,7 @@
 
     "manifest_version": 2,
     "name": "DOI Helper",
-    "version": "1.0.1",
+    "version": "1.0.2",
   
     "description": "A little add-on appending SciHub buttons for some webpages with s c i e n c e.",
   
