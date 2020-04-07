@@ -24,6 +24,10 @@
       {
         "matches": ["*://science.sciencemag.org/*"],
         "js": ["science.js"]
+      },
+      {
+        "matches": ["*://journals.aps.org/*/abstract/*"],
+        "js": ["aps.js"]
       }
     ]
   
