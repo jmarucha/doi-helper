@@ -20,6 +20,10 @@
       {
         "matches": ["*://*.sciencedirect.com/*"],
         "js": ["science-direct.js"]
+      },
+      {
+        "matches": ["*://science.sciencemag.org/*"],
+        "js": ["science.js"]
       }
     ]
   
